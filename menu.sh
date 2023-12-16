@@ -198,25 +198,25 @@ echo -e " ${CYAN}│$NC • $NC${CYAN} Domain ${NC}        ${CYAN}=$NC $domain${
 echo -e " ${CYAN}│$NC • $NC${CYAN} IP VPS ${NC}        ${CYAN}=$NC $IPVPS${NC}"
 echo -e " ${CYAN}│$NC • $NC${CYAN} ISP ${NC}           ${CYAN}=$NC $ISP${NC}"
 echo -e " ${CYAN}└──────────────────────────────────────────────────────────┘${NC}"
-echo -e "   ${WHITE} NGINX$NC : $status_nginx ${WHITE} WS-EPRO$NC : $status_ws_epro ${WHITE} DROPBEAR$NC : $status_dropbear ${WHITE} HAPROXY$NC : $status_haproxy   $NC${WHITE}$NC" 
-echo -e "                          ─────────────────── " | lolcat
-echo -e "        SSH & OPENVPN : $ssh1 TROJAN : $trb  SHADOWSOCKS-R : $ssa"
-echo -e "                        VLESS : $vla VMESS : $vma"
-echo -e " ${CYAN}             ┌─────────────────────────────────────────────┐${NC}"
-echo -e " ${CYAN}             │$NC${RED} Status Script $NC     ${RED}=$NC ${sts}"
-echo -e " ${CYAN}             │$NC${RED} Client/Regist $NC     ${RED}=$NC $username "
-echo -e " ${CYAN}             │$NC${RED} Exp.Script $NC        ${RED}=$NC $exp / $certifacate Days$NC "
-echo -e " ${CYAN}             └─────────────────────────────────────────────┘${NC}"
-echo -e "                          ─────────────────── " | lolcat
+echo -e " ${WHITE} NGINX$NC: $status_nginx ${WHITE} WS-EPRO$NC: $status_ws_epro ${WHITE} DROPBEAR$NC: $status_dropbear ${WHITE} HAPROXY$NC: $status_haproxy   $NC${WHITE}$NC" 
+echo -e "                        ─────────────────── " | lolcat
+echo -e "        ${WHITE}SSH & OPENVPN : $ssh1 TROJAN : $trb  SHADOWSOCKS-R : $ssa"
+echo -e "                        VLESS : $vla VMESS : $vma ${NC}"
+echo -e " ${CYAN}         ┌─────────────────────────────────────────────┐${NC}"
+echo -e " ${CYAN}         │$NC${RED} Status Script $NC     ${RED}=$NC ${sts}"
+echo -e " ${CYAN}         │$NC${RED} Client/Regist $NC     ${RED}=$NC $username "
+echo -e " ${CYAN}         │$NC${RED} Exp.Script $NC        ${RED}=$NC $exp / $certifacate Days$NC "
+echo -e " ${CYAN}         └─────────────────────────────────────────────┘${NC}"
+echo -e "                        ─────────────────── " | lolcat
 echo -e " ${CYAN}┌──────────────────────────────────────────────────────────┐${NC}"
-echo -e " ${CYAN}  $NC  ${BLUE}1.)${NC} ${WHITE}SSH/OPENVPN             ${BLUE}6.)${NC} ${WHITE}BACKUP / RESTORE    ${CYAN}  $NC" 
-echo -e " ${CYAN}│$NC  ${BLUE}2.)${NC} ${WHITE}VMESS / XRAY            ${BLUE}7.)${NC} ${WHITE}BOT TELEGRAM     ${CYAN}  │$NC"    
-echo -e " ${CYAN}  $NC  ${BLUE}3.)${NC} ${WHITE}VLESS / XRAY            ${BLUE}8.)${NC} ${WHITE}UPDATE SCRIPT    ${CYAN}   $NC"  
-echo -e " ${CYAN}│$NC  ${BLUE}4.)${NC} ${WHITE}TROJAN XRAY          ${BLUE}9.)${NC} ${WHITE}FEATURES  ${CYAN}  │$NC"
-echo -e " ${CYAN}  $NC  ${BLUE}5.)${NC} ${WHITE}SS-R Libev              ${BLUE}x.)${NC} ${RED}EXIT   ${CYAN}   $NC"
+echo -e " ${CYAN} $NC ${BLUE}1.)${NC} ${WHITE}SSH/OPENVPN             ${NC}${BLUE}6.)${NC} ${WHITE}BACKUP / RESTORE     ${NC}${CYAN}   $NC" 
+echo -e " ${CYAN}│$NC ${BLUE}2.)${NC} ${WHITE}VMESS / XRAY            ${NC}${BLUE}7.)${NC} ${WHITE}BOT TELEGRAM         ${NC}${CYAN}  │$NC"    
+echo -e " ${CYAN} $NC ${BLUE}3.)${NC} ${WHITE}VLESS / XRAY            ${NC}${BLUE}8.)${NC} ${WHITE}UPDATE SCRIPT        ${NC}${CYAN}   $NC"  
+echo -e " ${CYAN}│$NC ${BLUE}4.)${NC} ${WHITE}TROJAN XRAY             ${NC}${BLUE}9.)${NC} ${WHITE}FEATURES             ${NC}${CYAN}  │$NC"
+echo -e " ${CYAN} $NC ${BLUE}5.)${NC} ${WHITE}SS-R Libev              ${NC}${BLUE}x.)${NC} ${RED}EXIT                   ${NC}${CYAN}   $NC"
 echo -e " ${CYAN}└──────────────────────────────────────────────────────────┘${NC}"
 echo -e " "
-read -p " Select Options [ 1 / 9 or x ] :  " wZtXtQ
+read -p " Select Options [ 1 / 9 or x ] >>   " wZtXtQ
 case $wZtXtQ in
 1)
 clear
