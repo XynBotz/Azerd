@@ -49,10 +49,8 @@ res1() {
 netfilter-persistent
 clear
 echo -e "\033[95m┌─────────────────────────────────┐\033[0m"
-echo -e "\033[96;1m             UPDATE SCRIPT SUCCESS           "
+echo -e "\033[96;1m       UPDATE SCRIPT SUCCESS           "
 echo -e "\033[95m└─────────────────────────────────┘\033[0m"
 echo -e ""
-echo -e "\033[1;92m Akan Di arahkan Ke menu Dalam 3 Detik"
-sleep 3
-clear
+read -p "enter To menu"
 menu
