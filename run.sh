@@ -24,7 +24,7 @@ CHATID="6617783693"
 KEY="6751589620:AAHwjP6dzZhuqeyUOdYFc6742Q1YUVF1EjM"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 # ===================
-MYIP=$(curl -sS ipv4.icanhazip.com)
+# MYIP=$(curl -sS ipv4.icanhazip.com)
 clear
   # // Exporint IP AddressInformation
 export IP=$( curl -sS icanhazip.com )
@@ -36,7 +36,7 @@ clear;clear;clear
 
   # // Banner
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
-echo -e "\033[46m           LUNATIC TUNNELING \033[0m"
+echo -e "\033[96;1m        LUNATIC TUNNELING \033[0m"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
 sleep 3
@@ -65,7 +65,7 @@ fi
 if [[ $ipsaya == "" ]]; then
     echo -e "${EROR} IP Address ( ${RED}Not Detected${NC} )"
 else
-    echo -e "${OK} IP Address ( ${green}$MYIP${NC} )"
+    echo -e "${OK} IP Address ( ${green}$IP${NC} )"
 fi
 
 # // Validate Successfull
@@ -329,7 +329,7 @@ restart_system() {
 <code>Exp Sc : </code><code>$EXPSC</code>
 <code>────────────────────</code>
 <i>Automatic Notification from Github</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"⭐ᴏʀᴅᴇʀ⭐","url":"https://t.me/LunaticTunnel"},{"text":"⭐ɪɴꜱᴛᴀʟʟ⭐","url":"https://wa.me/6282240074362"}]]}'
+"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"https://t.me/LunaticTunnel"},{"text":"Contack","url":"https://wa.me/6282240074362"}]]}'
     curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 }
 clear
@@ -427,7 +427,7 @@ bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release
     wget -O /etc/nginx/conf.d/xray.conf "${REPO}cfg_conf_js/xray.conf" >/dev/null 2>&1
     sed -i "s/xxx/${domain}/g" /etc/haproxy/haproxy.cfg
     sed -i "s/xxx/${domain}/g" /etc/nginx/conf.d/xray.conf
-    curl ${REPO}files/nginx.conf > /etc/nginx/nginx.conf
+    curl ${REPO}cfg_conf_js/nginx.conf > /etc/nginx/nginx.conf
     
 cat /etc/xray/xray.crt /etc/xray/xray.key | tee /etc/haproxy/hap.pem
 
