@@ -56,8 +56,8 @@ datediff() {
 mai="datediff "$Exp" "$DATE""
 ######################################
 # // AKTIVATED & EXPIRED
-Info="🟢"
-Eror="🔴"
+Info="\033[92mACTIVED\033[0m"
+Eror="\033[91mEXPIRED\033[0m"
 today=`date -d "0 days" +"%Y-%m-%d"`
 Exp1=$(curl -sS https://raw.githubusercontent.com/LunaticTunnel/Azerd/ABSTRAK/REGIST | grep $MYIP | awk '{print $3}')
 if [[ $today < $Exp1 ]]; then
@@ -98,9 +98,9 @@ clear
 # // RUNNING SSH
 ######################################
 if [[ $ssh_service == "running" ]]; then 
-   status_ssh="${green} [ON] ${NC}"
+   status_ssh="${green}[ON]${NC}"
 else
-   status_ssh="${red} [OFF] ${NC} "
+   status_ssh="${red}[OFF]${NC} "
 fi
 ######################################
 # // RUNNING WEBSOCKET
@@ -189,6 +189,9 @@ echo -e " ${CYAN}┌────────────────────
 echo -e " ${CYAN}│$NC\033[45;96;1m                     Lunatic Tunneling                    $NC${CYAN}│$NC"
 echo -e " ${CYAN}└──────────────────────────────────────────────────────────┘${NC}"
 echo -e " ${CYAN}┌──────────────────────────────────────────────────────────┐${NC}"
+echo -e " ${WHITE} NGINX$NC: $status_nginx ${WHITE} WS-EPRO$NC: $status_ws_epro ${WHITE} DROPBEAR$NC: $status_dropbear ${WHITE} HAPROXY$NC: $status_haproxy   $NC${WHITE}$NC"
+echo -e " ${CYAN}└──────────────────────────────────────────────────────────┘${NC}"
+echo -e " ${CYAN}┌──────────────────────────────────────────────────────────┐${NC}"
 echo -e " ${CYAN}│$NC • $NC${WHITE} System OS ${NC}     ${CYAN}=$NC $MODEL${NC}"
 echo -e " ${CYAN}│$NC • $NC${WHITE} Core Cpu ${NC}      ${CYAN}=$NC $CORE${NC}"
 echo -e " ${CYAN}│$NC • $NC${WHITE} Server RAM ${NC}    ${CYAN}=$NC $uram/$RAM MB $NC"
@@ -198,23 +201,20 @@ echo -e " ${CYAN}│$NC • $NC${CYAN} Domain ${NC}        ${CYAN}=$NC $domain${
 echo -e " ${CYAN}│$NC • $NC${CYAN} IP VPS ${NC}        ${CYAN}=$NC $IPVPS${NC}"
 echo -e " ${CYAN}│$NC • $NC${CYAN} ISP ${NC}           ${CYAN}=$NC $ISP${NC}"
 echo -e " ${CYAN}└──────────────────────────────────────────────────────────┘${NC}"
-echo -e " ${WHITE} NGINX$NC: $status_nginx ${WHITE} WS-EPRO$NC: $status_ws_epro ${WHITE} DROPBEAR$NC: $status_dropbear ${WHITE} HAPROXY$NC: $status_haproxy   $NC${WHITE}$NC" 
-echo -e "                        ─────────────────── " | lolcat
-echo -e "        ${WHITE}SSH & OPENVPN : $ssh1 TROJAN : $trb  SHADOWSOCKS-R : $ssa"
-echo -e "                        VLESS : $vla VMESS : $vma ${NC}"
-echo -e " ${CYAN}         ┌─────────────────────────────────────────────┐${NC}"
+echo -e " ${WHITE}     SSH: $ssh1 TROJAN : $trb SS-R : $ssa VLESS : $vla VMESS : $vma ${NC}"
+echo -e " ${CYAN}         ┌───────────────────────────────────────────┐${NC}"
 echo -e " ${CYAN}         │$NC${RED} Status Script $NC     ${RED}=$NC ${sts}"
 echo -e " ${CYAN}         │$NC${RED} Client/Regist $NC     ${RED}=$NC $username "
 echo -e " ${CYAN}         │$NC${RED} Exp.Script $NC        ${RED}=$NC $exp / $certifacate Days$NC "
-echo -e " ${CYAN}         └─────────────────────────────────────────────┘${NC}"
-echo -e "                        ─────────────────── " | lolcat
-echo -e " ${CYAN}┌──────────────────────────────────────────────────────────┐${NC}"
-echo -e " ${CYAN} $NC ${BLUE}1.)${NC} ${WHITE}SSH/OPENVPN             ${NC}${BLUE}6.)${NC} ${WHITE}BACKUP / RESTORE     ${NC}${CYAN}   $NC" 
-echo -e " ${CYAN}│$NC ${BLUE}2.)${NC} ${WHITE}VMESS / XRAY            ${NC}${BLUE}7.)${NC} ${WHITE}BOT TELEGRAM         ${NC}${CYAN}  │$NC"    
-echo -e " ${CYAN} $NC ${BLUE}3.)${NC} ${WHITE}VLESS / XRAY            ${NC}${BLUE}8.)${NC} ${WHITE}UPDATE SCRIPT        ${NC}${CYAN}   $NC"  
-echo -e " ${CYAN}│$NC ${BLUE}4.)${NC} ${WHITE}TROJAN XRAY             ${NC}${BLUE}9.)${NC} ${WHITE}FEATURES             ${NC}${CYAN}  │$NC"
-echo -e " ${CYAN} $NC ${BLUE}5.)${NC} ${WHITE}SS-R Libev              ${NC}${BLUE}x.)${NC} ${RED}EXIT                   ${NC}${CYAN}   $NC"
-echo -e " ${CYAN}└──────────────────────────────────────────────────────────┘${NC}"
+echo -e " ${CYAN}         └───────────────────────────────────────────┘${NC}"
+echo -e " ${CYAN}               ─────────────────────────────── " | lolcat
+echo -e " ${CYAN}      ┌─────────────────────────────────────────────────────┐${NC}"
+echo -e " ${CYAN}       $NC ${BLUE}1.)${NC} ${WHITE}SSH / OPENVPN        ${NC}${BLUE}6.)${NC} ${WHITE}BACKUP / RESTORE     ${NC}${CYAN}   $NC" 
+echo -e " ${CYAN}      │$NC ${BLUE}2.)${NC} ${WHITE}VMESS / XRAY         ${NC}${BLUE}7.)${NC} ${WHITE}BOT TELEGRAM         ${NC}${CYAN}  │$NC"    
+echo -e " ${CYAN}       $NC ${BLUE}3.)${NC} ${WHITE}VLESS / XRAY         ${NC}${BLUE}8.)${NC} ${WHITE}UPDATE SCRIPT        ${NC}${CYAN}   $NC"  
+echo -e " ${CYAN}      │$NC ${BLUE}4.)${NC} ${WHITE}TROJAN / XRAY        ${NC}${BLUE}9.)${NC} ${WHITE}FEATURES             ${NC}${CYAN}  │$NC"
+echo -e " ${CYAN}       $NC ${BLUE}5.)${NC} ${WHITE}SS-R Libev           ${NC}${BLUE}x.)${NC} ${RED}EXIT                   ${NC}${CYAN}   $NC"
+echo -e " ${CYAN}      └─────────────────────────────────────────────────────┘${NC}"
 echo -e " "
 read -p " Select Options [ 1 / 9 or x ] >>   " wZtXtQ
 case $wZtXtQ in
