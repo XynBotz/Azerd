@@ -209,11 +209,11 @@ echo -e " ${CYAN}        │$NC${RED} Exp.Script $NC        ${RED}=$NC $exp / $c
 echo -e " ${CYAN}        └──────────────────────────────────────────┘${NC}"
 echo -e " ${CYAN}               ─────────────────────────────── " | lolcat
 echo -e " ${CYAN}     ┌──────────────────────────────────────────────────┐${NC}"
-echo -e " ${CYAN}      $NC ${BLUE}1.)${NC} ${WHITE}SSH / OPENVPN      ${NC}${CYAN} ${NC}    ${BLUE}6.)${NC} ${WHITE}BACKUP / RESTORE ${NC}${CYAN}   $NC" 
-echo -e " ${CYAN}     │$NC ${BLUE}2.)${NC} ${WHITE}VMESS / XRAY       ${NC}${CYAN}│${NC}    ${BLUE}7.)${NC} ${WHITE}BOT TELEGRAM   ${NC}${CYAN}  │$NC"    
-echo -e " ${CYAN}      $NC ${BLUE}3.)${NC} ${WHITE}VLESS / XRAY       ${NC}${CYAN} ${NC}    ${BLUE}8.)${NC} ${WHITE}UPDATE SCRIPT   ${NC}${CYAN}   $NC"  
-echo -e " ${CYAN}     │$NC ${BLUE}4.)${NC} ${WHITE}TROJAN / XRAY      ${NC}${CYAN}│${NC}    ${BLUE}9.)${NC} ${WHITE}FEATURES       ${NC}${CYAN}  │$NC"
-echo -e " ${CYAN}      $NC ${BLUE}5.)${NC} ${WHITE}SS-R Libev         ${NC}${CYAN} ${NC}    ${BLUE}x.)${NC} ${RED}EXIT              ${NC}${CYAN}   $NC"
+echo -e " ${CYAN}      $NC ${BLUE}1.)${NC} ${WHITE}SSH / OPENVPN      ${NC}${CYAN} ${NC}    ${BLUE}6.)${NC} ${WHITE}BACKUP / RESTORE ${NC}${CYAN} $NC" 
+echo -e " ${CYAN}     │$NC ${BLUE}2.)${NC} ${WHITE}VMESS / XRAY       ${NC}${CYAN}│${NC}    ${BLUE}7.)${NC} ${WHITE}BOT TELEGRAM   ${NC}${CYAN} │$NC"    
+echo -e " ${CYAN}      $NC ${BLUE}3.)${NC} ${WHITE}VLESS / XRAY       ${NC}${CYAN} ${NC}    ${BLUE}8.)${NC} ${WHITE}UPDATE SCRIPT  ${NC}${CYAN} $NC"  
+echo -e " ${CYAN}     │$NC ${BLUE}4.)${NC} ${WHITE}TROJAN / XRAY      ${NC}${CYAN}│${NC}    ${BLUE}9.)${NC} ${WHITE}FEATURES       ${NC}${CYAN} │$NC"
+echo -e " ${CYAN}      $NC ${BLUE}5.)${NC} ${WHITE}SS-R Libev         ${NC}${CYAN} ${NC}    ${BLUE}x.)${NC} ${RED}EXIT             ${NC}${CYAN}   $NC"
 echo -e " ${CYAN}     └──────────────────────────────────────────────────┘${NC}"
 echo -e " "
 read -p " Select Options [ 1 / 9 or x ] >>   " wZtXtQ
